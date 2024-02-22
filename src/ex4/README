@@ -1,0 +1,29 @@
+ibrahem.alyan
+212335582
+
+======================= ALGO run time and space analysis ==============================
+The run time complexity of this function is O(n^4), since there are two nested for loops
+that each iterate over n elements, and those for loops are nested within two outer for
+loops that each iterate over n elements. This results in a total of n^4 iterations.
+The space complexity of this function is O(n^4), since the function creates
+a new three-dimensional ArrayList of size n x n x n to store the sub-images.
+The space required for this ArrayList is proportional to the number of elements it contains, which is n^4.
+
+======================= Usage of built in data structure ====[=====================
+The use of the ArrayList data structure is good in this case because it allows the function to
+efficiently store and access the sub-images, and it allows the function to dynamically
+resize the ArrayList as needed.
+
+====================== Implementation details ======================
+I chose to implement the algo for the Image splitter in the interface as a default in order to
+provide an implementation for the function, which can then be used by any class that implements the interface.
+
+I used nested classes in the implementation of the BrightnessImgCharMatcher such as
+CharComparatorByBrightness class which implements another interface Comparator<Character>
+in order to use it in sorting the array using the built in sorting method "Arrays.Sort".
+
+I used a built in datastructures in order to get a effecting performance for big inputs.
+Also I used composition and inheritance in order to take care about polymorphism and
+code duplication and get unified methods.
+
+
